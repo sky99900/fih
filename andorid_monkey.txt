@@ -1,0 +1,22 @@
+// monkey must assign times, it doesn't have infinite test
+// we can use times and --throttle to make test periods
+// level 0 
+adb shell monkey -p com.example.te -v 5000 > 123.txt
+
+// level 1
+adb shell monkey -p com.example.te -v -v 5000 > 123.txt
+
+/ level 2
+adb shell monkey -p com.example.te -v -v -v 5000 > 123.txt
+
+// test all packages / throttle is one second and 500 times
+adb shell monkey --throttle 1000 -v 500
+
+// test one hour
+adb shell monkey --throttle 1000 -v 3600
+
+// kill monkey to stop
+// when you execute "ps|grep monkey", you will receive an id
+adb shell
+ps|grep monkey
+kill id
