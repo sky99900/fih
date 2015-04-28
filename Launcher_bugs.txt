@@ -1,0 +1,39 @@
+Process bugs:
+
+1. 
+  key:  VNAL-1806
+  [00WW][Monkey]com.fihtdc.foxlauncher ANR happen when running monkey test 
+  defer , becase this is a duplicated issue with VNAL-1007
+
+2. key: appg2-13344
+  [ InFocusLauncher_V2.1][V5.0050.01][LSOL]在更換動態壁紙后，打開safebox，按back退出后，重啟手機，壁紙會變為默認壁紙。
+
+
+
+From 4/20 to 4/24
+
+VNAL-1007
+	The log is deleted by the server, QA doesn't keep the log. So, I have to do it.
+        This issue is about Monkey.
+
+
+8926PFAL-2216  : open gl, not found any open gl api in FoxLauncher uses, and there is not any declaration in
+ AndroidManifest.xml
+
+
+PHXL-5644 when switch languages 235 times, oom would happen, I have contacted QA in Korea.
+      To simplify the test steps, she will skip Message ap.
+      Autotest tool is not accurate.
+
+8926PFAL-2439
+	Exception Message: at android.view.RenderNode.nGetElevation(Native method), not start to look into.
+
+
+PHXL-7022 Strings for Korea are correct
+	the strings are ok, and transfer this issue to Laurence on 4/24 
+
+
+2015.04.28
+PHXL-7126 transfer to AP_Call team function
+
+
